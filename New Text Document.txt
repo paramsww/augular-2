@@ -1,0 +1,15 @@
+How to push folder to github
+git add .
+git commit -m "hi"
+git push
+
+
+
+______________________________-
+
+start npm
+git add .
+git remote -v
+git commit -m "hii"
+git push -u origin
+git push -u origin master

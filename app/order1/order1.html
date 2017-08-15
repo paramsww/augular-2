@@ -1,0 +1,42 @@
+
+<div class='table-responsive'>
+
+
+        <h1 style="color:#fff; font-size:25px; text-align: left; background:red; height:50px; padding: 10px 0px 0px 15px;">
+                {{pageTitle}}
+        </h1>
+        
+<table class='table' *ngIf='orders && orders.length'>
+       <thead>
+           <tr>
+                   <th>
+                        <button class=' btn btn-primary' (click)='toggleImage()'>
+                           Show Image
+                        </button>
+                   </th>
+                   <th>Product</th>
+                   <th>Code</th>
+                   <th>Available</th>
+                   <th>Prise</th>
+                   <th>Descripyion</th>
+                   <th>5 Star Rating</th>
+           </tr>           
+        </thead>        
+         <tbody>
+                 <tr *ngFor="let order of orders">
+                        <td><img [src]="order.imageUrl" [style.width.px]='imageWidth' *ngIf='showImage'></td>
+                        <td>{{order.ProductName}}</td>
+                        <td>{{order.ProductCode}}</td>
+                        <td>{{order.releaseDate}}</td>
+                        <td>{{order.price}}</td>
+                        <td>{{order.discription}}</td>
+                        <td>{{order.StarRating}}</td>
+
+
+                 </tr>
+         </tbody>       
+
+</table>              
+
+
+</div>

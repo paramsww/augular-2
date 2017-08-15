@@ -7,8 +7,12 @@ selector: 'app-app',
 </div>`
 templateUrl: 'app/book.component.html'*/
 
-template : '<book-app></book-app>'
+template : '<book-app></book-app> <order-app></order-app>'
 
 })
 
-export class AppComponent{}
+export class AppComponent{
+
+
+
+}
